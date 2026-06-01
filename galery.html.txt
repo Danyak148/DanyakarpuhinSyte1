@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Галерея космоса</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header class="site-header">
+        <div class="header-container">
+            <div class="logo">
+                <a href="index.html">🌌 AstroWorld</a>
+            </div>
+            <nav class="main-nav">
+                <ul class="nav-list">
+                    <li><a href="index.html">Главная</a></li>
+                    <li><a href="gallery.html" class="active">Галерея</a></li>
+                    <li><a href="contacts.html">Контакты</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="gallery-container">
+        <h1 class="page-title">Космическая галерея</h1>
+        
+        <!-- Панель управления -->
+        <div class="gallery-controls">
+            <div class="stats">
+                <span><i class="fas fa-image"></i> Всего фото: <span id="image-counter">6</span></span>
+                <span><i class="fas fa-heart"></i> Всего лайков: <span id="total-likes">0</span></span>
+            </div>
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-filter="all">Все</button>
+                <button class="filter-btn" data-filter="galaxy">Галактики</button>
+                <button class="filter-btn" data-filter="nebula">Туманности</button>
+                <button class="filter-btn" data-filter="planet">Планеты</button>
+            </div>
+        </div>
+
+        <!-- CSS GRID ГАЛЕРЕЯ -->
+        <div class="gallery-grid" id="image-gallery">
+            
+            <!-- Карточка 1: Галактика Андромеды -->
+            <article class="image-card" data-category="galaxy">
+                <div class="card-image">
+                    <img src="images/andromeda.jpg" alt="Галактика Андромеды" loading="lazy">
+                    <div class="image-overlay">
+                        <button class="like-btn" data-id="1">
+                            <i class="far fa-heart"></i>
+                            <span class="like-count">0</span>
+                        </button>
+                    </div>
+                </div>
+                <div class="card-content">
+                    <h3>Галактика Андромеды</h3>
+                    <p>Ближайшая крупная галактика к Млечному Пути. Через 4,5 млрд лет столкнётся с нашей галактикой.</p>
+                </div>
+            </article>
+
+            <!-- Карточка 2: Туманность Ориона -->
+            <article class="image-card" data-category="nebula">
+                <div class="card-image">
+                    <img src="images/orion.jpg" alt="Туманность Ориона" loading="lazy">
+                    <div class="image-overlay">
+                        <button class="like-btn" data-id="2">
+                            <i class="far fa-heart"></i>
+                            <span class="like-count">0</span>
+                        </button>
+                    </div>
+                </div>
+                <div class="card-content">
+                    <h3>Туманность Ориона</h3>
+                    <p>Яркая диффузная туманность в созвездии Ориона, видна невооружённым глазом. Место рождения новых звёзд.</p>
+                </div>
+            </article>
+
+            <!-- Карточка 3: Сатурн -->
+            <article class="image-card" data-category="planet">
+                <div class="card-image">
+                    <img src="images/saturn.jpg" alt="Планета Сатурн" loading="lazy">
+                    <div class="image-overlay">
+                        <button class="like-btn" data-id="3">
+                            <i class="far fa-heart"></i>
+                            <span class="like-count">0</span>
+                        </button>
+                    </div>
+                </div>
+                <div class="card-content">
+                    <h3>Сатурн</h3>
+                    <p>Шестая планета от Солнца, знаменитая своей системой колец, состоящих из льда и пыли.</p>
+                </div>
+            </article>
+
+            <!-- Карточка 4: Млечный Путь -->
+            <article class="image-card" data-category="galaxy">
+                <div class="card-image">
+                    <img src="images/milkyway.jpg" alt="Млечный Путь" loading="lazy">
+                    <div class="image-overlay">
+                        <button class="like-btn" data-id="4">
+                            <i class="far fa-heart"></i>
+                            <span class="like-count">0</span>
+                        </button>
+                    </div>
+                </div>
+                <div class="card-content">
+                    <h3>Млечный Путь</h3>
+                    <p>Наша галактика, в которой находится Солнечная система. Содержит от 100 до 400 миллиардов звёзд.</p>
+                </div>
+            </article>
+
+            <!-- Карточка 5: Туманность Конская голова -->
+            <article class="image-card" data-category="nebula">
+                <div class="card-image">
+                    <img src="images/horsehead.jpg" alt="Туманность Конская голова" loading="lazy">
+                    <div class="image-overlay">
+                        <button class="like-btn" data-id="5">
+                            <i class="far fa-heart"></i>
+                            <span class="like-count">0</span>
+                        </button>
+                    </div>
+                </div>
+                <div class="card-content">
+                    <h3>Туманность Конская голова</h3>
+                    <p>Тёмная туманность в созвездии Ориона. Одна из самых узнаваемых туманностей.</p>
+                </div>
+            </article>
+
+            <!-- Карточка 6: Юпитер -->
+            <article class="image-card" data-category="planet">
+                <div class="card-image">
+                    <img src="images/jupiter.jpg" alt="Юпитер" loading="lazy">
+                    <div class="image-overlay">
+                        <button class="like-btn" data-id="6">
+                            <i class="far fa-heart"></i>
+                            <span class="like-count">0</span>
+                        </button>
+                    </div>
+                </div>
+                <div class="card-content">
+                    <h3>Юпитер</h3>
+                    <p>Самая большая планета Солнечной системы. Большое красное пятно — гигантский шторм, бушующий веками.</p>
+                </div>
+            </article>
+        </div>
+    </main>
+
+    <footer class="site-footer">
+        <p>© Карпухин Даниил Сергеевич, студент 1ВР-2-25, 2026</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

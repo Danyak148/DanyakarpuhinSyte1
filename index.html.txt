@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Мир астрономии - Главная</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- ШАПКА С FLEXBOX НАВИГАЦИЕЙ -->
+    <header class="site-header">
+        <div class="header-container">
+            <div class="logo">
+                <a href="index.html">🌌 AstroWorld</a>
+            </div>
+            <nav class="main-nav">
+                <ul class="nav-list">
+                    <li><a href="index.html" class="active">Главная</a></li>
+                    <li><a href="gallery.html">Галерея</a></li>
+                    <li><a href="contacts.html">Контакты</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="main-content">
+        <section class="hero">
+            <h1>Добро пожаловать в мир астрономии!</h1>
+            <p>Исследуйте бескрайний космос вместе с нами</p>
+        </section>
+
+        <section class="about-section">
+            <h2>О чём этот сайт?</h2>
+            <p>Этот сайт посвящён удивительному миру космоса. Здесь я собираю самые интересные факты, новости и изображения далёких галактик, звёзд и планет.</p>
+            <p>Космос всегда манил человечество своей загадочностью и масштабом.</p>
+
+            <h2>Почему космос — это интересно?</h2>
+            <ul class="facts-list">
+                <li>Мы знаем о Вселенной меньше, чем о глубинах океана.</li>
+                <li>Каждую минуту в космосе происходит что-то невероятное.</li>
+                <li>Изучение космоса помогает развивать технологии на Земле.</li>
+            </ul>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <p>© Карпухин Даниил Сергеевич, студент 1ВР-2-25, 2026</p>
+    </footer>
+</body>
+</html>
